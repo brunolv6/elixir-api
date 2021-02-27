@@ -15,7 +15,7 @@ defmodule Rockeatpay.NumbersTest do
     test "when there is no file with the given name, returns an error" do
       response = Numbers.sum_from_file("banana")
 
-      expected_response = {:error, %{message: "Invalid file!"}}
+      expected_response = "banana"{:error, %{message: "Invalid file!!!"}}
 
       assert response == expected_response
     end
